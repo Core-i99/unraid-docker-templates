@@ -9,7 +9,7 @@
   <Support>https://github.com/ziggyds/iventoy</Support>
   <Project>https://iventoy.com</Project>
   <Overview>Dockerized version of iVentoy for use on unraid</Overview>
-  <Category/>
+  <Category>Network:Other</Category>
   <WebUI>http://[IP]:[PORT:26000]</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/Core-i99/unraid-docker-templates/main/templates/iventoy.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/Core-i99/unraid-docker-templates/main/templates/icons/iventoy.png</Icon>
