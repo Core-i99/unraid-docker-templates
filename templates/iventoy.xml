@@ -6,9 +6,15 @@
   <Network>bridge</Network>
   <Privileged>true</Privileged>
   <Shell>sh</Shell>
-  <Support>https://github.com/ziggyds/iventoy</Support>
+  <Support>https://github.com/ziggyds/iventoy/issues</Support>
   <Project>https://iventoy.com</Project>
-  <Overview>Dockerized version of iVentoy for use on unraid</Overview>
+  <Overview>Dockerized version of iVentoy for use on unraid.
+iVentoy is an enhanced version of the PXE server.
+With iVentoy you can boot and install OS on multiple machines at the same time through the network.
+iVentoy is extremely easy to use, without complicated configuration, just put the ISO file in the specified location and select PXE boot in the client machine.
+iVentoy supports x86 Legacy BIOS, IA32 UEFI, x86_64 UEFI and ARM64 UEFI mode at the same time.
+iVentoy support 110+ common types of OS (Windows/WinPE/Linux/VMware)
+  </Overview>
   <Category>Network:Other</Category>
   <WebUI>http://[IP]:[PORT:26000]</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/Core-i99/unraid-docker-templates/main/templates/iventoy.xml</TemplateURL>
@@ -16,10 +22,19 @@
   <Date>2023-11-13</Date>
   <Config Name="WebUI" Target="26000" Default="26000" Mode="tcp" Description="iVentoy GUI HTTP Server Port" Type="Port" Display="always" Required="true" Mask="false">26000</Config>
   <Config Name="Port: 16000" Target="16000" Default="16000" Mode="tcp" Description="iVentoy PXE Service HTTP Server Port" Type="Port" Display="advanced" Required="true" Mask="false">16000</Config>
-  <Config Name="Port: 10809" Target="" Default="10809" Mode="tcp" Description="NBD Server Port" Type="Port" Display="advanced" Required="true" Mask="false">10809</Config>
-  <Config Name="Port: 67" Target="" Default="67" Mode="udp" Description="DHCP Server Port" Type="Port" Display="advanced" Required="true" Mask="false">67</Config>
-  <Config Name="Port: 68" Target="" Default="68" Mode="udp" Description="DHCP Server Port" Type="Port" Display="advanced" Required="true" Mask="false">68</Config>
-  <Config Name="Port: 69" Target="" Default="69" Mode="udp" Description="TFTP Server Port" Type="Port" Display="advanced" Required="true" Mask="false">69</Config>
+  <Config Name="Port: 10809" Target="10809" Default="10809" Mode="tcp" Description="NBD Server Port" Type="Port" Display="advanced" Required="true" Mask="false">10809</Config>
+  <Config Name="Port: 67" Target="67" Default="67" Mode="udp" Description="DHCP Server Port" Type="Port" Display="advanced" Required="true" Mask="false">67</Config>
+  <Config Name="Port: 68" Target="68" Default="68" Mode="udp" Description="DHCP Server Port" Type="Port" Display="advanced" Required="true" Mask="false">68</Config>
+  <Config Name="Port: 69" Target="69" Default="69" Mode="udp" Description="TFTP Server Port" Type="Port" Display="advanced" Required="true" Mask="false">69</Config>
   <Config Name="AUTO_START_PXE" Target="AUTO_START_PXE" Default="1" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">1</Config>
   <Config Name="ISO Directory" Target="/app/iso" Default="" Mode="rw" Description="iVentoy ISO directory" Type="Path" Display="always" Required="true" Mask="false"/>
+  <Changes>
+    ### 2024-01-07
+    - Fix template errors
+    - Update Overview
+    - Update Support link
+
+    ### 2023-11-13
+    - Initial Release
+  </Changes>
 </Container>
