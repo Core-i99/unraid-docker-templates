@@ -19,7 +19,6 @@ iVentoy support 110+ common types of OS (Windows/WinPE/Linux/VMware)
   <WebUI>http://[IP]:[PORT:26000]</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/Core-i99/unraid-docker-templates/main/templates/iventoy.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/Core-i99/unraid-docker-templates/main/templates/icons/iventoy.png</Icon>
-  <Date>2023-11-13</Date>
   <PrivilegedReq>true</PrivilegedReq>
   <Config Name="WebUI" Target="26000" Default="26000" Mode="tcp" Description="iVentoy GUI HTTP Server Port" Type="Port" Display="always" Required="true" Mask="false">26000</Config>
   <Config Name="Port: 16000" Target="16000" Default="16000" Mode="tcp" Description="iVentoy PXE Service HTTP Server Port" Type="Port" Display="advanced" Required="true" Mask="false">16000</Config>
@@ -29,13 +28,14 @@ iVentoy support 110+ common types of OS (Windows/WinPE/Linux/VMware)
   <Config Name="Port: 69" Target="69" Default="69" Mode="udp" Description="TFTP Server Port" Type="Port" Display="advanced" Required="true" Mask="false">69</Config>
   <Config Name="AUTO_START_PXE" Target="AUTO_START_PXE" Default="1" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">1</Config>
   <Config Name="ISO Directory" Target="/app/iso" Default="" Mode="rw" Description="iVentoy ISO directory" Type="Path" Display="always" Required="true" Mask="false"/>
+  <Date>2024-01-07</Date>
   <Changes>
-    ### 2024-01-07
-    - Fix template errors
-    - Update Overview
-    - Update Support link
+### 2024-01-07
+- Fix template errors
+- Update Overview
+- Update Support link
 
-    ### 2023-11-13
-    - Initial Release
+### 2023-11-13
+- Initial Release
   </Changes>
 </Container>
