@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Maintainer>
+  <Icon>https://raw.githubusercontent.com/Core-i99/unraid-docker-templates/main/templates/icons/avatar.png</Icon>
+  <Profile>
+    Creating and maintaining templates for Unraid Docker containers.
+  </Profile>
+  <DonateLink>paypal.me/stijnrombouts22</DonateLink>
+  <DonateText>If you like my work please consider Donating.</DonateText>
+</Maintainer>
