@@ -20,6 +20,7 @@ iVentoy support 110+ common types of OS (Windows/WinPE/Linux/VMware)
   <TemplateURL>https://raw.githubusercontent.com/Core-i99/unraid-docker-templates/main/templates/iventoy.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/Core-i99/unraid-docker-templates/main/templates/icons/iventoy.png</Icon>
   <Date>2023-11-13</Date>
+  <PrivilegedReq>true</PrivilegedReq>
   <Config Name="WebUI" Target="26000" Default="26000" Mode="tcp" Description="iVentoy GUI HTTP Server Port" Type="Port" Display="always" Required="true" Mask="false">26000</Config>
   <Config Name="Port: 16000" Target="16000" Default="16000" Mode="tcp" Description="iVentoy PXE Service HTTP Server Port" Type="Port" Display="advanced" Required="true" Mask="false">16000</Config>
   <Config Name="Port: 10809" Target="10809" Default="10809" Mode="tcp" Description="NBD Server Port" Type="Port" Display="advanced" Required="true" Mask="false">10809</Config>
